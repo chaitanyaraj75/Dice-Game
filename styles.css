@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+ES:wght@100..400&display=swap');
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+}
+
+body {
+  background-color: #0a2045;
+}
+
+h1 {
+  margin: 30px;
+  font-family: 'Lobster', cursive;
+  text-shadow: 5px 0 #232931;
+  font-size: 6rem;
+  color: #4ECCA3;
+}
+
+p {
+  font-size: 2rem;
+  color: #4ECCA3;
+  font-family: 'Indie Flower', cursive;
+}
+
+img {
+  width: 80%;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+footer {
+  margin-top: 5%;
+  color: #EEEEEE;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+
+}
+
+button{
+  display: inline-block;
+  padding: 0%;
+  height: 5rem;
+  width: 10rem;
+  margin-top: 3rem;
+  background-color: rgb(167, 202, 42);
+  border-radius: 25%;
+  border: 2px solid #000000;
+  font-size: larger;
+  font-family: 'Playwrite ES',cursive;
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  transition: 0.15s;
+  transition-timing-function: ease;
+}
+
+
+button:hover {
+  height: 6rem;
+  width: 11rem;
+  font-size: 22px;
+  background-color: rgb(131, 157, 37);
+  border: 3px solid #000000;
+  box-shadow: 0 3px 6px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  /* box-shadow: rgba(21, 17, 17, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+}
+
+
+@media (max-width: 700px) {
+  .container {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+  .dice {
+    text-align: center;
+    display: inline-block;
+    width: 45%;
+    margin: auto;
+  }
+  h1 {
+    margin: 30px;
+    font-family: 'Lobster', cursive;
+    text-shadow: 5px 0 #232931;
+    font-size: 2rem;
+    color: #4ECCA3;
+  }
+  p {
+    font-size: 1rem;
+    color: #4ECCA3;
+    font-family: 'Indie Flower', cursive;
+  }
+  img {
+    /* width: 75%; */
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    /* display: inline-block; */
+  }
+  footer {
+    margin-top: 5%;
+    color: #EEEEEE;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+  
+  }
+  
+  button{
+    display: inline-block;
+    padding: 0%;
+    height: 2.5rem;
+    width: 5.5rem;
+    margin-top: 3rem;
+    background-color: rgb(167, 202, 42);
+    border-radius: 25%;
+    border: 2px solid #000000;
+    font-size: 12px;
+    font-family: 'Playwrite ES',cursive;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition: 0.15s;
+    transition-timing-function: ease;
+  }
+  button:hover {
+    height: 3rem;
+    width: 6rem;
+    font-size: 13px;
+    background-color: rgb(131, 157, 37);
+    border: 3px solid #000000;
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  footer {
+    margin-top: 15%;
+    color: #ada4a4;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+  }
+}
