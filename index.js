@@ -7,6 +7,8 @@ var randomno1;
 var randomimg1;
 var randomno2;
 var randomimg2;
+var score1=0;
+var score2=0;
 document.querySelector("#again").onclick=function() {refresh()};
 function refresh(){
     randomno1=Math.floor(Math.random()*6)+1;
@@ -18,13 +20,27 @@ function refresh(){
     document.querySelector(".img2").setAttribute("src",randomimg2);
 
     if(randomno1>randomno2){
-        document.getElementById("result").innerHTML=userInput+" wins the game";
+        score1++;
+        document.getElementById("current").innerHTML=userInput+" wins this turn";
     }
     else if(randomno1<randomno2){
-        document.getElementById("result").innerHTML="Computer wins the game";
+        score2++;
+        document.getElementById("current").innerHTML="Computer wins this turn";
     }
     else{
-        document.getElementById("result").innerHTML="It's a draw!! Try again.";
+        document.getElementById("current").innerHTML="It's a draw!! Try again.";
+    }
+    if(score1>score2){
+        document.getElementById("overall").innerHTML=userInput+" is leading by";
+        document.getElementById("result").innerHTML=score1+" - "+score2;
+    }
+    else if(score1<score2){
+        document.getElementById("overall").innerHTML="Computer is leading by";
+        document.getElementById("result").innerHTML=score1+" - "+score2;
+    }
+    else{
+        document.getElementById("overall").innerHTML="It's a tie";
+        document.getElementById("result").innerHTML=score1+" - "+score2;
     }
     document.getElementById("again").innerHTML="Try Again!";
 }
