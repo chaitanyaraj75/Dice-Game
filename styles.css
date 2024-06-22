@@ -89,13 +89,6 @@ button:hover {
     width: 45%;
     margin: auto;
   }
-  h1 {
-    margin: 30px;
-    font-family: 'Lobster', cursive;
-    text-shadow: 5px 0 #232931;
-    font-size: 2rem;
-    color: #4ECCA3;
-  }
   p {
     font-size: 1rem;
     color: #4ECCA3;
