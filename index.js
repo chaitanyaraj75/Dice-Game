@@ -58,7 +58,6 @@ function preloadResources() {
 
     const promises = [];
     // Preload images
-    alert("Preloading resources...");
     imgasset.forEach(src => {
         promises.push(new Promise(resolve => {
             const img = new Image();
@@ -69,7 +68,6 @@ function preloadResources() {
         }));
     });
     // console.log(promises);
-    alert("Images preloaded successfully!");
     // Preload audio
     audios.forEach(src => {
         promises.push(new Promise(resolve => {
